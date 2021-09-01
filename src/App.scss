@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
+
+$default-font: "Roboto", sans-serif;
+$default-transition: all 0.2s linear;
+$color-grey: #444444;
+$color-light-orange: #FFC074;
+$color-light-green: #B6C867;
+$color-light-biege: #FAF1E6;
+$color-green: #01937C;
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $default-font;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button, input, textarea {
+    font-family: $default-font;
+    resize: none;
+}
+
+hr {
+    border: none;
+    background-color: #ccc;
+    height: 1px;
+}
+
+.btn-primary {
+    border: 2px solid $color-green;
+    background-color: $color-green;
+    padding: 0.5rem 1rem;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: $default-transition;
+
+    &:hover {
+        background-color: white;
+        color: $color-green;
+        transform: scale(0.95);
+    }
+}
+
+.modal-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4); 
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+section.notes {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    
+    .container {
+        max-width: 1200px;
+        width: 1200px;
+        padding: 1rem 0;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 1.5rem;
+    }
+
+    .empty-notes {
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color-green;
+        font-size: 2.5rem;
+    }
+}

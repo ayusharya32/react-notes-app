@@ -1,0 +1,46 @@
+$color-grey: #444444;
+$color-light-orange: #FFC074;
+$color-light-green: #B6C867;
+$color-light-biege: #FAF1E6;
+$color-green: #01937C;
+
+.note-dialog {
+    display: grid;
+    place-items: center;
+    width: 500px;
+    height: 50%;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: $color-light-biege;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+
+        .note-created {
+            font-size: 0.7rem;
+            color: $color-grey;
+            letter-spacing: 1px;
+            margin-bottom: 0.2rem;
+        }
+
+        .title-input {
+            font-size: 1rem;
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: 2px solid #ccc;
+            margin-bottom: 0.5rem;
+        }
+
+        .description-input {
+            flex: auto;
+            font-size: 1rem;
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: 2px solid #ccc;
+            margin-bottom: 0.5rem;
+        }
+    }
+}

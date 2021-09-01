@@ -1,0 +1,17 @@
+export const USER_LOADING = 'USER_LOADING'
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS'
+export const REGISTER_SUCCESS = 'REGISTER_SUCCESS'
+export const GET_USER_SUCCESS = 'GET_USER_SUCCESS' 
+export const USER_LOGOUT = 'USER_LOGOUT'
+export const USER_ERROR = 'USER_ERROR'
+export const CLEAR_USER_ERROR = 'CLEAR_USER_ERROR'
+export const CLEAR_USER_SUCCESS = 'CLEAR_USER_SUCCESS'
+
+export const NOTE_LOADING = "NOTE_LOADING"
+export const SET_NOTES = "SET_NOTES"
+export const ADD_NOTE = "ADD_NOTE"
+export const REMOVE_NOTE = "REMOVE_NOTE"
+export const UPDATE_NOTE = "UPDATE_NOTE"
+export const NOTE_ERROR = "NOTE_ERROR"
+export const CLEAR_NOTE_ERROR = "CLEAR_NOTE_ERROR"
+export const CLEAR_NOTE_SUCCESS = "CLEAR_NOTE_SUCCESS"
